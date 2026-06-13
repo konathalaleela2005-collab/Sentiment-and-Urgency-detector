@@ -23,7 +23,7 @@ Additional Features:
 * Configurable alert thresholds.
 * Ticket audit logging.
 * Dashboard-ready output format
- Architecture Overview:
+ARCHITECHTURE OVERVIEW:
                 ┌─────────────────┐
                 │ Customer Ticket │
                 └────────┬────────┘
