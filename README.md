@@ -8,7 +8,7 @@ The Sentiment & Urgency Detector uses an LLM-powered classification service to a
 2. Team Member 2 – 23U41A0519 JAVVADI SUNITHA
 3. Team Member 3 – 24U45A0413 ADIGARLA MOHAN
 4. Team Member 4 – 23U41A4239 MASARAPU LALITHA
-Features Implemented:
+FEATURE IMPLEMENTATION:
 Core Features:
 * Analyze inbound ticket text using an LLM.
 * Detect customer sentiment (Positive, Neutral, Negative).
@@ -17,7 +17,7 @@ Core Features:
 * Generate explainable reasons for classification.
 * Risk threshold-based alert generation.
 * Automatic Discord notifications for critical tickets.
-Additional Features:
+ADDITIONAL FEATURES:
 * Confidence scoring.
 * JSON-based API response.
 * Configurable alert thresholds.
