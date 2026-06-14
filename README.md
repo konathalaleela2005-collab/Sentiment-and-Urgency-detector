@@ -1,5 +1,4 @@
 SENTIMENT & URGENCY DETECTOR
-Project Title: Sentiment & Urgency Detector
 
 PROBLEM STATEMENT:
 Customer support teams receive large volumes of inbound tickets every day. Critical messages containing anger, frustration, urgency, or churn-risk indicators can be missed, leading to escalations, customer dissatisfaction, and revenue loss.
