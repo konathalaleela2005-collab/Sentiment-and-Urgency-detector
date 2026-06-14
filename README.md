@@ -74,35 +74,26 @@ Development Tools:
 SETUP INSTRUCTION:
 1. Clone Repository
 git clone https://github.com/your-team/sentiment-urgency-detector.git
-
 cd sentiment-urgency-detector
 2. Create Virtual Environment
 bash
 python -m venv venv
  3. Activate Environment
-
 Windows:
-
 ```bash
 venv\Scripts\activate
-```
-4. Install Dependencies
+```4. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 5. Configure Environment Variables
-
 Create `.env`
-
 ```env
 OPENAI_API_KEY=your_api_key
 
 DISCORD_WEBHOOK_URL=your_webhook_url
 
 ALERT_THRESHOLD=0.75
-```
-
----
 RUN INSTRUCTIONS:
 Start API Server
 ```bash
