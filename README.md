@@ -147,8 +147,6 @@ Reasons:
 
 Ticket:
 "Your service has been down for two days..."
-
-
 AI CAPABILITY DEMONSTRATED:
 LLM-Based Classification
 The system uses a Large Language Model to:
@@ -177,7 +175,7 @@ Assumptions
 * Threshold tuning may be required for different businesses.
 * LLM API costs increase with ticket volume.
 DEMO VIDEO LINK:
-demo link:
+demo link:https://drive.google.com/file/d/1l609UCGY_uJ-B57SB1o6_vdm3HbB9MO6/view?usp=drive_link
 DOCUMENT OF ROC(result of content):
 Input:Customer support ticket text
 Processing:LLM evaluates sentiment, urgency, and churn-risk signals
