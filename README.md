@@ -172,6 +172,7 @@ Assumptions
 * Non-English tickets may require translation support.
 * Threshold tuning may be required for different businesses.
 * LLM API costs increase with ticket volume.
+LIVE APPLICATION LINK:https://probable-space-adventure-69qr57x9xv6jf4w6x-8502.app.github.dev/
 DEMO VIDEO LINK:
 demo link: https://drive.google.com/file/d/1l609UCGY_uJ-B57SB1o6_vdm3HbB9MO6/view?usp=sharing
 DOCUMENT OF ROC(result of content):
