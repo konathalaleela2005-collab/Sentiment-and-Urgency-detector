@@ -1,193 +1,304 @@
 SENTIMENT & URGENCY DETECTOR
 
-PROBLEM STATEMENT:
-Customer support teams receive large volumes of inbound tickets every day. Critical messages containing anger, frustration, urgency, or churn-risk indicators can be missed, leading to escalations, customer dissatisfaction, and revenue loss.
+🧠 AI-Powered Customer Support Ticket Intelligence System
 
-The Sentiment & Urgency Detector uses an LLM-powered classification service to analyze incoming support tickets, assign sentiment and urgency scores, detect churn-risk language, and automatically notify support teams through Discord when high-risk tickets are identified.
+<p align="center">
+<b>Sentiment & Urgency Detector</b> is an AI-based system that analyzes customer support tickets to automatically detect <b>Sentiment, Urgency, and Churn Risk</b> using Large Language Models (OpenAI + Hugging Face) and triggers real-time alerts through Discord for critical issues.
+</p>
 
-TEAM MEMBERS:
-1. Team Member 1 – 23U41A0526 K.LEELA SRI LAKSHMI
-2. Team Member 2 – 24U45A0413 ADIGARLA MOHAN
-3. Team Member 3 – 23U41A0519 JAVVANDI SUNITHA
-4. Team Member 4 – 23U41A4239 MASARAPU LALITHA
-FEATURES IMPLEMENTATION:
-Core Features:
-* Analyze inbound ticket text using an LLM.
-* Detect customer sentiment (Positive, Neutral, Negative).
-* Calculate urgency score.
-* Identify churn-risk language.
-* Generate explainable reasons for classification.
-* Risk threshold-based alert generation.
-* Automatic Discord notifications for critical tickets.
- Additional Features:
-* Confidence scoring.
-* JSON-based API response.
-* Configurable alert thresholds.
-* Ticket audit logging.
-* Dashboard-ready output format.
-  ARCHITECTURE OVERVIEW:
-                ┌─────────────────┐
-                │ Customer Ticket │
-                └────────┬────────┘
-                         │
-                         ▼
-               ┌──────────────────┐
-               │ Sentiment Service│
-               │   (LLM Model)    │
-               └────────┬─────────┘
-                        │
-        ┌───────────────┼────────────────┐
-        ▼               ▼                ▼
- Sentiment Score  Urgency Score   Churn Risk Score
-        │               │                │
-        └───────┬───────┴────────┬───────┘
-                ▼                ▼
-         Risk Evaluation Engine
-                │
-      Above Threshold?
-                │
-         Yes ───┘
-                ▼
-      Discord Alert Service
-                │
-                ▼
-      Support Team Notification
-TOOLS AND TECHNOLOGIES USED:
- AI/ML
-* OpenAI GPT API (LLM Classifier)
-* Prompt Engineering
- Backend
-* Python
-* FastAPI / Flask
-Intigration:
-* Discord Webhooks
-Data prosessing:
-* JSON
-* REST APIs
-Development Tools:
-* Git
-* GitHub
-* VS Code
+---
 
-SETUP INSTRUCTION:
-1. Clone Repository
-git clone https://github.com/your-team/sentiment-urgency-detector.git
-cd sentiment-urgency-detector
-2. Create Virtual Environment
-bash
+## 📌 Submission Identity (Placement Drive)
+
+| Field            | Details                          |
+| ---------------- | -------------------------------- |
+| 🏢 Organization  | Infinity Computer Solutions      |
+| 📂 Category      | Service Desk                     |
+| 👥 Team Number   | Team 8                           |
+| 🆔 UC ID         | UC-4                             |
+| 🚀 Project Title | Sentiment & Urgency Detector     |
+| 🧠 Domain        | AI / LLM-Based Automation System |
+| 📅 Type          | Placement Drive Submission       |
+
+---
+
+## 👨‍💻 Team Members
+
+| Name    | Role                                    |
+| ------- | --------------------------------------- |
+| Leela   | Project Lead & System Design            |
+| Mohan   | Backend Developer (FastAPI Integration) |
+| Lalitha | AI/ML Engineer (OpenAI + Hugging Face)  |
+| Sunitha | Testing, Documentation & UI Support     |
+
+---
+
+## 🌟 Project Overview
+
+Customer support teams receive thousands of tickets daily. Many critical messages containing **anger, urgency, frustration, or cancellation intent** are often missed due to manual handling.
+
+This results in:
+
+* Delayed responses
+* Poor customer satisfaction
+* Increased customer churn
+* Revenue loss
+
+### 💡 Our Solution
+
+The system automatically:
+✔ Detects sentiment of customer messages
+✔ Calculates urgency level
+✔ Identifies churn-risk behavior
+✔ Generates AI-based explanations
+✔ Sends real-time alerts via Discord
+
+---
+
+## ❗ Problem Statement
+
+Organizations face difficulty in identifying high-priority tickets among large volumes of incoming customer requests.
+
+Manual handling leads to:
+
+* Slow response time
+* Missed urgent complaints
+* Inefficient escalation process
+
+This project solves it using **AI-driven automation and LLM intelligence**.
+
+---
+
+## 🚀 Live Application
+
+🌐 https://probable-space-adventure-69qr57x9xv6jf4w6x-8502.app.github.dev/
+
+---
+
+## 🎥 Live Demo Video
+
+📽️ https://drive.google.com/file/d/1l609UCGY_uJ-B57SB1o6_vdm3HbB9MO6/view?usp=sharing
+
+---
+
+## ✨ Key Features
+
+### 🤖 AI Intelligence Features
+
+* 😊 Sentiment Detection (Positive / Neutral / Negative)
+* ⚡ Urgency Scoring System
+* 🚨 Churn Risk Prediction
+* 🧠 Explainable AI Reasoning
+* 📊 Confidence Score Generation
+
+### 🔔 Automation Features
+
+* Discord Webhook Alerts
+* Real-time Ticket Analysis
+* Automatic Escalation Trigger
+
+### 📦 System Features
+
+* REST API (FastAPI)
+* JSON Structured Output
+* Streamlit UI Support
+
+---
+
+## 🏗️ System Architecture
+
+```text id="arch2"
+Customer Ticket Input
+        │
+        ▼
+LLM Processing Layer (OpenAI / Hugging Face)
+        │
+        ├── Sentiment Analysis
+        ├── Urgency Detection
+        ├── Churn Risk Analysis
+        │
+        ▼
+Risk Evaluation Engine
+        │
+   High Risk?
+        │
+     YES ▼
+Discord Webhook Alert System
+        │
+Support Team Notification
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* 🐍 Python
+* ⚡ FastAPI
+* 🤖 OpenAI API
+* 🧠 Hugging Face Models
+* 🌐 Streamlit
+* 🔗 Discord Webhooks
+* 📦 JSON Processing
+* 🧰 Git & GitHub
+
+---
+
+## 📁 Project Structure
+
+```text id="struct2"
+Sentiment-and-Urgency-detector/
+│── app.py
+│── requirements.txt
+│── .env
+│── backend/
+│── ai_model/
+│── utils/
+│── alerts/
+└── README.md
+```
+
+---
+
+## ⚙️ Installation Steps
+
+### 1️⃣ Clone Repository
+
+```bash id="clone2"
+git clone https://github.com/konathalaleela2005-collab/Sentiment-and-Urgency-detector
+cd Sentiment-and-Urgency-detector
+```
+
+### 2️⃣ Create Virtual Environment
+
+```bash id="venv2"
 python -m venv venv
- 3. Activate Environment
-Windows:
-```bash
+```
+
+### 3️⃣ Activate Environment
+
+```bash id="act2"
 venv\Scripts\activate
-```4. Install Dependencies
-```bash
+```
+
+### 4️⃣ Install Dependencies
+
+```bash id="pip2"
 pip install -r requirements.txt
 ```
-5. Configure Environment Variables
-Create `.env`
-```env
+
+---
+
+## 🔐 Environment Variables
+
+```env id="env2"
 OPENAI_API_KEY=your_api_key
-
 DISCORD_WEBHOOK_URL=your_webhook_url
-
 ALERT_THRESHOLD=0.75
-RUN INSTRUCTIONS:
-Start API Server
-```bash
-python app.py
- Test Endpoint:
-```bash
-POST /analyze-ticket
 ```
-Example:
-```json
-{
-  "ticket": "I am extremely disappointed. If this issue isn't fixed today, I will cancel my subscription."
-}
- Sample Input
-```json
-{
-  "ticket": "Your service has been down for two days. Nobody is responding. If this is not resolved immediately, I will switch to another provider."
-}
- Sample Output
 
-```json
+---
+
+## ▶️ Run Project
+
+```bash id="run2"
+python app.py
+```
+
+OR
+
+```bash id="stream2"
+streamlit run app.py
+```
+
+---
+
+## 📥 Sample Input
+
+```json id="in2"
+{
+  "ticket": "I am extremely disappointed. If this issue is not fixed today, I will cancel my subscription."
+}
+```
+
+---
+
+## 📤 Sample Output
+
+```json id="out2"
 {
   "sentiment": "Negative",
   "sentiment_score": 0.94,
   "urgency_score": 0.91,
   "churn_risk_score": 0.88,
   "overall_risk": "High",
-  "flagged": true,
-  "reasons": [
-    "Strong negative language detected",
-    "Immediate resolution requested",
-    "Customer threatens to switch provider"
-  ]
+  "flagged": true
 }
 ```
 
-DISCORD ALERT :
-```text
-🚨 High-Risk Customer Ticket
+---
+
+## 🚨 Discord Alert Example
+
+🚨 HIGH PRIORITY TICKET
 
 Risk Level: HIGH
-
 Sentiment Score: 0.94
 Urgency Score: 0.91
 Churn Risk Score: 0.88
 
-Reasons:
-• Strong negative language
-• Immediate action requested
-• Churn intent detected
+Reason:
 
-Ticket:
-"Your service has been down for two days..."
-AI CAPABILITY DEMONSTRATED:
-LLM-Based Classification
-The system uses a Large Language Model to:
-* Classify customer sentiment.
-* Detect urgency levels.
-* Identify churn-risk indicators.
-* Generate human-readable explanations.
-* Produce structured JSON outputs.
- Agent-Like Behavior
-The solution autonomously:
-1. Receives ticket text.
-2. Analyzes customer intent.
-3. Computes risk scores.
-4. Makes escalation decisions.
-5. Sends notifications to Discord.
-ASSUMPTIONS AND LIMITATIONS:
-Assumptions
-* Ticket text is in English.
-* Discord webhook is configured correctly.
-* OpenAI API is available and accessible.
-* Support teams monitor Discord alerts.
- Limitations:
-* Accuracy depends on LLM quality.
-* Sarcasm and highly ambiguous language may be misclassified.
-* Non-English tickets may require translation support.
-* Threshold tuning may be required for different businesses.
-* LLM API costs increase with ticket volume.
-LIVE APPLICATION LINK:
-https://probable-space-adventure-69qr57x9xv6jf4w6x-8502.app.github.dev/
-DEMO VIDEO LINK:
-demo link:
-https://drive.google.com/file/d/1l609UCGY_uJ-B57SB1o6_vdm3HbB9MO6/view?usp=sharing
-DOCUMENT OF ROC(result of content):
-Input:Customer support ticket text
-Processing:LLM evaluates sentiment, urgency, and churn-risk signals
-Output:
-* Sentiment score
-* Urgency score
-* Churn-risk score
-* Explanation of reasoning
-* Automatic Discord alert for high-risk tickets
-BUSINESS IMPACT:
-* Faster response to critical tickets
-* Reduced customer churn
-* Improved escalation management
-* Better customer satisfaction and retention metrics
+* Negative emotional tone
+* Immediate action required
+* Customer may churn
+
+---
+
+## 📊 Business Impact
+
+✔ Faster response to critical tickets
+✔ Reduced customer churn
+✔ Improved support efficiency
+✔ Automated escalation system
+✔ Better customer satisfaction
+
+---
+
+## ⚠️ Challenges Faced
+
+* Handling ambiguous customer tone
+* Prompt optimization for LLM accuracy
+* Reducing false positives
+* Real-time webhook integration
+
+---
+
+## 🔮 Future Enhancements
+
+* 🌍 Multi-language support
+* 📊 Analytics dashboard
+* 📩 Email/SMS alerts
+* 🤖 Fine-tuned domain model
+* 📈 Sentiment trend tracking
+
+---
+
+## 📸 Screenshots
+
+*(Add UI screenshots here for stronger impact)*
+
+---
+
+## 🏁 Conclusion
+
+The **Sentiment & Urgency Detector** demonstrates how Artificial Intelligence can transform customer support systems by automatically prioritizing critical tickets and enabling faster decision-making through LLM-based automation.
+
+---
+
+<p align="center">
+💼 Built for Infinity Computer Solutions Placement Drive  
+</p>
+
+<p align="center">
+🚀 AI-Powered Customer Support Intelligence System  
+</p>
