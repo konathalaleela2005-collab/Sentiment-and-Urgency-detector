@@ -285,7 +285,174 @@ Reason:
 
 ## 📸 Screenshots
 
-*(Add UI screenshots here for stronger impact)*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment & Urgency Detector</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1e21;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 16px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background-color: #e9ecef; /* Matching the muted blue-gray tone from the image */
+            font-family: inherit;
+            font-size: 1rem;
+            color: #495057;
+            resize: vertical;
+            outline: none;
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+
+        textarea:focus {
+            background-color: #f1f3f5;
+            border-color: #ced4da;
+        }
+
+        button {
+            background-color: #f1f3f5;
+            color: #495057;
+            border: 1px solid #ced4da;
+            padding: 10px 24px;
+            font-size: 0.95rem;
+            border-radius: 20px; /* Rounded pill style matching the image */
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            margin-bottom: 32px;
+        }
+
+        button:hover {
+            background-color: #e2e6ea;
+            border-color: #adb5bd;
+        }
+
+        .result-section {
+            border-top: 1px solid #e9ecef;
+            padding-top: 24px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 16px;
+        }
+
+        .result-item {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            color: #495057;
+        }
+
+        .result-value {
+            font-weight: 500;
+            color: #212529;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Sentiment & Urgency Detector</h1>
+    
+    <div class="form-group">
+        <label for="complaintInput">Enter Customer Complaint</label>
+        <textarea id="complaintInput" placeholder="Type customer complaint here...">I am frustrated and nobody helped me</textarea>
+    </div>
+    
+    <button onclick="analyzeSentiment()">Analyze</button>
+    
+    <div class="result-section">
+        <h2>Result</h2>
+        <div class="result-item">
+            Sentiment: <span id="sentimentResult" class="result-value">Angry / Negative</span>
+        </div>
+        <div class="result-item">
+            Urgency: <span id="urgencyResult" class="result-value">High</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    function analyzeSentiment() {
+        const text = document.getElementById('complaintInput').value.toLowerCase().trim();
+        const sentimentEl = document.getElementById('sentimentResult');
+        const urgencyEl = document.getElementById('urgencyResult');
+
+        if (text === "") {
+            sentimentEl.textContent = "N/A";
+            urgencyEl.textContent = "N/A";
+            return;
+        }
+
+        // Mock basic client-side analysis logic for interactivity
+        if (text.includes('frustrated') || text.includes('angry') || text.includes('nobody helped')) {
+            sentimentEl.textContent = "Angry / Negative";
+            urgencyEl.textContent = "High";
+        } else if (text.includes('broken') || text.includes('urgent') || text.includes('help')) {
+            sentimentEl.textContent = "Negative";
+            urgencyEl.textContent = "High";
+        } else if (text.includes('thanks') || text.includes('good') || text.includes('happy')) {
+            sentimentEl.textContent = "Positive";
+            urgencyEl.textContent = "Low";
+        } else {
+            sentimentEl.textContent = "Neutral";
+            urgencyEl.textContent = "Medium";
+        }
+    }
+</script>
+
+</body>
+</html>
 
 ---
 
