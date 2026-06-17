@@ -71,7 +71,7 @@ This project solves it using **AI-driven automation and LLM intelligence**.
 
 ## 🚀 Live Application
 
-🌐 https://probable-space-adventure-69qr57x9xv6jf4w6x-8502.app.github.dev/
+🌐 https://sentiment-and-urgency-detector-dqg64ccmtf28dul7pead9m.streamlit.app/
 
 ---
 
